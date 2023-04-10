@@ -1,4 +1,4 @@
-class Person 
+class Person
   def initialize(age, name = 'Unknown', _parent_permision: true)
     @id = Random.rand(1..1000)
     @name = name
