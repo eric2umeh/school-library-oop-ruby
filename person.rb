@@ -1,7 +1,8 @@
-require_relative "./nameable"
+require_relative './nameable'
 
 class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super(name)
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -22,6 +23,6 @@ class Person < Nameable
   def correct_name
     @name
   end
-  
+
   private :of_age?
 end
