@@ -8,4 +8,8 @@ class Book
         @rentals = []
     end
 
+    def add_rental(rental)
+        @rental << rental
+    end
+
 end
