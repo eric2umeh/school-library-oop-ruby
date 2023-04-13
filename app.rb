@@ -30,7 +30,7 @@ class App
     end
 
     def create_person
-        puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
+        puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
         res = gets.chomp.to_i
 
         if res == 1
