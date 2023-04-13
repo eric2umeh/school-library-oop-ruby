@@ -8,6 +8,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Usage](#usage)
   - [👥 Author ](#-author-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -70,6 +71,10 @@ In order to run this project you need:
   ```
 
 - On the command line, at the project's root, run `bundle install` to install app dependencies
+
+### Usage
+
+- run `ruby main.rb` on the command line and follow the instructions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
