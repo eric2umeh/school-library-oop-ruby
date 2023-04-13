@@ -92,7 +92,8 @@ In order to run this project you need:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Check more codes**
+- [ ] **Better UI Experience**
+- [ ] **Efficient Operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
