@@ -9,7 +9,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-author-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -81,12 +81,17 @@ In order to run this project you need:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Eric Umeohabike**
 
 - GitHub: [@eric2umeh](https://github.com/eric2umeh)
 - LinkedIn: [@eric-umeohabike](https://www.linkedin.com/in/eric-umeohabike/)
+
+👤 **Alwyn Androvelle**
+
+- GitHub: [@Thoth1111](https://github.com/Thoth1111)
+- LinkedIn: [@alwyn-androvelle](https://www.linkedin.com/in/alwyn-androvelle-simiyu/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
