@@ -22,7 +22,7 @@ class App
       data = @book.map(&:to_h)
       data.each do |book|
         puts "Title: #{book['title']}, Author: #{book['author']}"
-      # @book.each { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
+      end
     end
   end
 
@@ -32,21 +32,9 @@ class App
       puts 'No people available! Please add people'
     else
       data = @people.map(&:to_h)
-      data.each_with_index.map do |person, index|
       data.each do |person|
         puts "Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
       end
-      #   if person.instance_of?(Student)
-      #     str1 = "[#{index}] - [#{person.class}] - Id: #{person.id} , "
-      #     str2 =
-      #       " Name: #{person.name}, Age: #{person.age}"
-      #   else
-      #     str1 = "[#{index}] - [#{person.class}] - Id: #{person.id} ,"
-      #     str2 =
-      #       "  Name: #{person.name}, Age:  #{person.age}, Specialization: #{person.specialization}\n"
-      #   end
-      #   puts str1 + str2
-      # end
     end
   end
 
@@ -96,19 +84,12 @@ class App
     author = gets.chomp
 
     book = Book.new(title, author)
-    @book. << book
+    @book << book
     save_data(@book, 'books.json')
     puts 'Book created successfully'
   end
 
   def create_rental
-    puts 'Select a book from the following list by number'
-    @book = load_data('books.json')
-    @book.each_with_index do |book, index|
-      puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
-    end
-    rental_book = gets.chomp.to_i
-
     puts 'Select a person from the following list by number'
     @people = load_data('people.json')
     @people.each_with_index do |person, index|
