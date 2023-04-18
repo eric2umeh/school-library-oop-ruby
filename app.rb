@@ -42,9 +42,10 @@ class App
     puts 'Do you want to  create a student (1) or a teacher(2)?'
     res = gets.chomp.to_i
 
-    if res == 1
+    case res
+    when 1
       create_student
-    elsif res == 2
+    when 2
       create_teacher
     end
   end
@@ -90,10 +91,17 @@ class App
   end
 
   def create_rental
+    puts 'Select a book from the following list by number'
+    @book = load_data('books.json')
+    @book.each_with_index do |book, index|
+      puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
+    end
+    rental_book = gets.chomp.to_i
+
     puts 'Select a person from the following list by number'
     @people = load_data('people.json')
     @people.each_with_index do |person, index|
-      puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      puts "#{index}) Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
     end
     rental_person = gets.chomp.to_i
 
