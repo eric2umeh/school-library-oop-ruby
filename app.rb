@@ -121,7 +121,7 @@ class App
     puts 'Rentals:'
     @rental.each do |rental|
       if id == rental['person']['id']
-        puts "Date: #{rental.date}, Book: \"#{rental.book.title}\", by #{rental.book.author}"
+        puts "Date: #{rental['date']}, Book: #{rental['book']['title']}, by #{rental['book']['author']}"
       end
     end
   end
