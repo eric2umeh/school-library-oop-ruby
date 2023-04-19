@@ -1,0 +1,1 @@
+[{"date":"2020-02-02","book":{"title":"red","author":"ian","rentals":["#<Rental:0x000002326d8b63d8>"]},"person":{"id":370,"age":12,"name":"ben","parent_permission":true,"rentals":["#<Rental:0x000002326d8b63d8>"]}}]
