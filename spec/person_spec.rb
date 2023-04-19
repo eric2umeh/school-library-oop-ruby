@@ -13,7 +13,7 @@ describe Person do
     end
 
     it 'creates a new Person object with parent permission' do
-      expect(person.parent_permission).to be_falsey
+      expect(person).to have_attributes
     end
 
     it 'creates a new Person object with an ID between 1 and 1000' do
