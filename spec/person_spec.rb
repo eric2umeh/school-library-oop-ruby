@@ -13,7 +13,7 @@ describe Person do
     end
 
     it 'creates a new Person object with parent permission' do
-      expect(person).to have_attributes
+      expect(person).to have_attributes(parent_permission: false)
     end
 
     it 'creates a new Person object with an ID between 1 and 1000' do
@@ -28,7 +28,7 @@ describe Person do
   describe '#add_rentals' do
     it 'adds a rental to the person\'s list of rentals' do
       rental = double('rental')
-      person.add_rentals(rental)
+      person.add_rental(rental)
       expect(person.rentals).to include(rental)
     end
   end
