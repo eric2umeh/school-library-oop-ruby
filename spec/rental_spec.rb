@@ -6,7 +6,7 @@ describe Rental do
       book = { 'title' => 'The Great Gatsby', 'author' => 'F. Scott Fitzgerald', 'rentals' => [] }
       person = { 'name' => 'John Doe', 'age' => 25, 'parent_permission' => true, 'rentals' => [] }
       date = '2022-01-01'
-      rental = Rental.new(date, book, person)
+      rental = Rental.new(date: date, book: book, person: person)
 
       expect(rental.date).to eq date
       expect(rental.book).to eq book
@@ -17,7 +17,7 @@ describe Rental do
       book = { 'title' => 'The Great Gatsby', 'author' => 'F. Scott Fitzgerald', 'rentals' => [] }
       person = { 'name' => 'John Doe', 'age' => 25, 'parent_permission' => true, 'rentals' => [] }
       date = '2022-01-01'
-      rental = Rental.new(date, book, person)
+      rental = Rental.new(date: date, book: book, person: person)
 
       expect(book['rentals'].last).to eq rental
       expect(person['rentals'].last).to eq rental
